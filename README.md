@@ -26,3 +26,28 @@ HEAD
   git reset: 예전 commit을 가리키도록 이동(히스토리를 고쳐쓴다, 애초에 commit하지 않은 것 처럼 예전 commit으로 branch를 옮기는 것)
   git revert: 변경분을 공유하기 위한 방식(수정된 commit이 생성됨)
   
+git cherry-pick
+  사용법: git cherry-pick <Commit1> <Commit2> <...>
+  현재 위치(HEAD) 아래에 있는 일련의 commit들에 대한 복사본을 만듦
+
+Interactive Rebase
+  rebase명령어를 사용 할 대 -i 옵션을 같이 사용 하는 것
+  대화창에서 할 수 있는 것
+    1)적용할 commit들의 순서를 UI를 통해 바꿀 수 있다
+    2)원하지 않는 commit들을 뺄 수 있다. pick을 이용해 지정할 수 있다.
+    3)commit을 스쿼시(squash)할 수 있다. 합칠 수 있다
+
+git 기능들
+  git rebase -i
+  git cherry-pick
+  git commit --amend: 커밋 내용 정정
+
+Git tag
+  사용법: git tag v1 C1
+  특정 commit들을 branch로 참조하듯 영구적인 mailestone(이정표)으로 표시
+
+Git describe
+  사용법: git describe <ref>
+  commit 히스토리에서 앞 뒤로 여러 commit을 이동하고 나서 commit 트리에서 방향 감각을 다시 찾는데 도움
+  <tag>_<numCommits>_g<hash>
+  
