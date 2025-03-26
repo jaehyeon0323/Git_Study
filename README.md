@@ -50,4 +50,16 @@ Git describe
   사용법: git describe <ref>
   commit 히스토리에서 앞 뒤로 여러 commit을 이동하고 나서 commit 트리에서 방향 감각을 다시 찾는데 도움
   <tag>_<numCommits>_g<hash>
-  
+
+# Git Remote(원격)
+  git clone:
+    원격 저장소에 있는 내용을 로컬에 복사, 생성 할 때 사용하는 명령어
+
+  git fetch:
+    1)원격 저장소에는 있지만 로컬에니느 없는 커밋들을 다운
+    2)우리의 원격 브랜치가 가리키는 곳을 업데이트
+    로컬을 변경하진 않
+
+  git pull
+    
+
